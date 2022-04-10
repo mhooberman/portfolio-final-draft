@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa113a1de6.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTWL90XETX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-BTWL90XETX');
+    </script>
+    <title>Contact Me</title>
+</head>
+<body>
+    <a class = "skip" href="#main">Skip to Main Content</a>
+	<header>
+		<nav>
+			<ul>
+                <li><a href = "index.html">Home</a></li>
+				<li><a href = "about.html">About Me</a></li>
+                <li><a href = "myexp.html">My Experiences</a></li>
+                <li class="active"><a href = "contact.html" >Contact Me</a></li>
+			</ul>
+		</nav>
+		<h1 id="main">Contact Me</h1>
+	</header>
+
+
+	<main class="container4">
+        <div class="contactimg">
+            <img src = "images/atdheadshot.jpeg" alt = "A professional headshot of Marlee with a blurred background behind her" width="200" id="atdheadshot"/>
+        </div>      
+        <!-- <div class="imageLinks">
+            <a href="mailto:marleehooberman@gmail.com">
+                <img src = "images/contact.png" alt = "A figure positioned within an envelope" width="200" id="mail"/>
+            </a>
+            <a href="https://www.linkedin.com/in/marlee-hooberman/">
+                <img src = "images/linkedin.png" alt = "A multicolor LinkedIn logo graphic" width="200" id="linkedIn"/>
+            </a> -->
+        </div>
+        <!-- <p>To reach me via email, send all messages to: marleehooberman@gmail.com.</p>
+        <p>To reach me on LinkedIn, visit my page: www.linkedin.com/in/marlee-hooberman</p> -->
+    <!-- FORM -->
+        <div class="form">
+            <form action="https://formspree.io/f/meqnzzpa" method = "POST">
+                <fieldset> 
+                    <legend id="form_title"> Fill out the form below to contact me directly:</legend>
+                    <label for="name">Name:</label>
+                        <input type="text" placeholder="Enter your name" name = "name" id="name"><br/>
+                    <label for="email">Email:</label>
+                        <input type="email" placeholder="Enter your email" name = "email" id="email"><br/>
+                    <label for="phone">Phone Number:</label>
+                        <input type="email" placeholder="123-456-7890" name = "phone" id="phone"><br/>    
+                    <label for="message"><br>Message:</br></label>
+                        <textarea placeholder="Enter your message" id = "message" name="message" required></textarea> </br>
+                    </br>
+                    <input type = "submit" value = "Submit" id="submit">
+                </fieldset>
+            </form> 
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; Marlee Hooberman 2022 <i class="fa-solid fa-heart" label="Solid black heart icon"></i> </p>
+	</footer>
+</body>
+</html>
