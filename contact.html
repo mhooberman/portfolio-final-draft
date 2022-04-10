@@ -33,11 +33,40 @@
 		<h1 id="main">Contact Me</h1>
 	</header>
 
+    <main class="container4">
+        <div class="contactimg">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/atdheadshot.jpeg" id="atdheadshot" alt="Professional headshot of Marlee">
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="form">
+                        <form action="https://formspree.io/f/meqnzzpa" method = "POST">
+                            <fieldset> 
+                                <legend id="form_title"> Fill out the form below to contact me directly:</legend>
+                                <label for="name">Name:</label>
+                                    <input type="text" placeholder="Enter your name" name = "name" id="name"><br/>
+                                <label for="email">Email:</label>
+                                    <input type="email" placeholder="Enter your email" name = "email" id="email"><br/>
+                                <label for="phone">Phone Number:</label>
+                                    <input type="email" placeholder="123-456-7890" name = "phone" id="phone"><br/>    
+                                <label for="message"><br>Message:</br></label>
+                                    <textarea placeholder="Enter your message" id = "message" name="message" required></textarea> </br>
+                                </br>
+                                <input type = "submit" value = "Submit" id="submit">
+                            </fieldset>
+                        </form> 
+                    </div>
+                  </div>
+                </div>
+            </div>
 
+<!-- 
 	<main class="container4">
         <div class="contactimg">
             <img src = "images/atdheadshot.jpeg" alt = "A professional headshot of Marlee with a blurred background behind her" width="200" id="atdheadshot"/>
-        </div>      
+        </div>       -->
         <!-- <div class="imageLinks">
             <a href="mailto:marleehooberman@gmail.com">
                 <img src = "images/contact.png" alt = "A figure positioned within an envelope" width="200" id="mail"/>
@@ -45,11 +74,11 @@
             <a href="https://www.linkedin.com/in/marlee-hooberman/">
                 <img src = "images/linkedin.png" alt = "A multicolor LinkedIn logo graphic" width="200" id="linkedIn"/>
             </a> -->
-        </div>
+        <!-- </div> -->
         <!-- <p>To reach me via email, send all messages to: marleehooberman@gmail.com.</p>
         <p>To reach me on LinkedIn, visit my page: www.linkedin.com/in/marlee-hooberman</p> -->
     <!-- FORM -->
-        <div class="form">
+        <!-- <div class="form">
             <form action="https://formspree.io/f/meqnzzpa" method = "POST">
                 <fieldset> 
                     <legend id="form_title"> Fill out the form below to contact me directly:</legend>
@@ -65,11 +94,11 @@
                     <input type = "submit" value = "Submit" id="submit">
                 </fieldset>
             </form> 
-        </div>
+        </div> -->
         
     </main>
-    <footer>
-        <p>&copy; Marlee Hooberman 2022 <i class="fa-solid fa-heart" label="Solid black heart icon"></i> </p>
+    <footer id = "contact_foot">
+        <p>&copy; Marlee Hooberman 2022 <i class="fa-solid fa-heart" label="Solid black heart icon"></i></p>
 	</footer>
 </body>
 </html>
