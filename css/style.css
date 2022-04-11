@@ -55,6 +55,10 @@ nav ul li.active {
 
 .skip {
     position: absolute;
+    left: -1000px;
+    -webkit-transition: top 0.5s ease-out;
+    transition: left s ease-out;
+    z-index: 1;
 }
 
 #main {
@@ -143,17 +147,21 @@ h1#main.main1 {
 }
 
 /* Prefers Reduced Motion */
-@media (prefers-reduced-motion){
+@media screen and (prefers-reduced-motion: reduce){
     .main1 {
-        animation-name: none;
+        animation: none;
     }
 
     #future {
-        animation-name: none;
+        animation: none;
     }
 
     .form {
-        animation-name: none;
+        animation: none;
+    }
+
+    .flip-card {
+        animation: none;
     }
 }
 
@@ -234,6 +242,7 @@ h1#main.main1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -331,7 +340,12 @@ input#submit {
 
 /* TABLET */
 
-@media screen and (min-width: 680px){
+@media screen and (min-width: 720px){
+    .skip:focus {
+        left: 0px;
+        top: 20px;
+    }
+
     nav {
         text-align: center;
     }
@@ -570,32 +584,14 @@ input#submit {
     h1#main.main1 {
         font-size: 3.5em;
     }
-
-    .form {
-        opacity: 0;
-        animation: new-item-animation 3s linear forwards;
-    }
-
-    img#atdheadshot {
-        width: 100%;
-    }
-
-    .flip-card,
-    .flip-card-back,
-    .flip-card-front,
-    .flip-card-inner {
-        text-align: center;
-    }
-
     .flip-card {
         background-color: transparent;
         width: 400px;
         height: 600px;
         border: 1px solid #f1f1f1;
-        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        perspective: 1000px;
       }
-      
-      /* This container is needed to position the front and back side */
+
       .flip-card-inner {
         position: relative;
         width: 100%;
@@ -605,35 +601,54 @@ input#submit {
         transform-style: preserve-3d;
       }
       
-      /* Do an horizontal flip when you move the mouse over the flip box container */
-      .flip-card:hover .flip-card-inner {
+      .flip-card:hover .flip-card-inner, .flip-card:active {
         transform: rotateY(180deg);
       }
+
+      .flip-card:focus-within .flip-card-inner,
+      .flip-card:active .flip-card-inner,
+      .flip-card:focus .flip-card-inner{
+          transform: rotateY(180deg);
+      }
       
-      /* Position the front and back side */
       .flip-card-front,
       .flip-card-back {
         position: absolute;
         width: 100%;
         height: 100%;
-        -webkit-backface-visibility: hidden; /* Safari */
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
       }
       
-      /* Style the front side (fallback if image is missing) */
       .flip-card-front {
         background-color: #bbb;
         color: black;
       }
       
-      /* Style the back side */
       .flip-card-back {
-        background-color: dodgerblue;
+        background-color: rgb(20, 120, 202);
         color: white;
         transform: rotateY(180deg);
+        height: 650px;
       }
 
       #contact_foot {
           padding-top: 100px;
       }
+
+      img#atdheadshot {
+        width: 100%;
+    }
+
+      .form {
+        text-align: center;
+        justify-items: stretch;
+        width: 400px;
+        opacity: 0;
+        animation: new-item-animation 3s linear forwards;
+    }
+
+    .container4 .contactimg {
+        text-align: center;
+    }
 }
