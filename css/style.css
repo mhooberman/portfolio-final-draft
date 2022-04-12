@@ -141,6 +141,15 @@ h1#main.main1 {
 
 /* Prefers Reduced Motion */
 @media screen and (prefers-reduced-motion: reduce){
+    html {
+        scroll-behavior: auto;
+    }
+
+    .skip {
+        -webkit-transition: initial;
+        transition: initial;
+    }
+
     .main1 {
         animation: none;
     }
@@ -158,7 +167,7 @@ h1#main.main1 {
     }
 
     .parallax {
-        background-attachment: scroll;
+        background-attachment: initial;
     }
 }
 
