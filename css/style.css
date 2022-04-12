@@ -78,16 +78,6 @@ h1{
     margin: 10px;
 }
 
-.container1 img {
-    width: 200px;
-    /* border: 3px solid #17BBFD; */
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
-    align-items: center;
-}
-
 .index {
     display: grid;
 }
@@ -458,6 +448,35 @@ input#submit {
         width: 25%;
     }
 
+    .index {
+        text-align: center;
+    }
+
+    .big_image {
+        visibility: hidden;
+    }
+
+    /* PARALLAX */
+
+    .parallax {
+        /* The image used */
+        background-image: url("../images/colorheadshot.jpg");
+        /* background: linear-gradient(lightblue, white, lightblue); */
+      
+        /* Full height */
+        height: 100%;
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: 50% 10%;
+        background-repeat: no-repeat;
+        background-size: 50%;
+    }
+
+    .container1 p {
+        background-color: rgb(194, 230, 241);
+    }
+
     .aboutme img {
         width: 15%;
     }
@@ -633,7 +652,7 @@ input#submit {
       }
 
       #contact_foot {
-          padding-top: 100px;
+          padding-top: 300px;
       }
 
       img#atdheadshot {
