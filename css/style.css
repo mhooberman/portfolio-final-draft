@@ -78,10 +78,6 @@ h1{
     margin: 10px;
 }
 
-.index {
-    display: grid;
-}
-
 .big_image img:hover{
     box-shadow: 1px 2px darkslategrey;
     filter: grayscale(1);
@@ -89,8 +85,12 @@ h1{
 
 
 /* Home */
-.big_image {
+
+.index {
     display: grid;
+}
+
+.big_image {
     grid-template-columns: 1fr;
     justify-items: center;
     align-content: center;
@@ -102,7 +102,6 @@ img.colorheadshot {
 }
 
 .container1 {
-    display: grid;
     grid-template-columns: 50px 1fr 50px;
     font-size: large;
     text-align: center;
@@ -136,6 +135,10 @@ h1#main.main1 {
     }
 }
 
+.form2 {
+    display: none;
+}
+
 /* Prefers Reduced Motion */
 @media screen and (prefers-reduced-motion: reduce){
     .main1 {
@@ -152,6 +155,10 @@ h1#main.main1 {
 
     .flip-card {
         animation: none;
+    }
+
+    .parallax {
+        background-attachment: scroll;
     }
 }
 
@@ -408,6 +415,10 @@ input#submit {
         flex-wrap: wrap;
         text-align: center;
     }
+
+    .form2 {
+        display: none;
+    }
 }
 
 
@@ -655,7 +666,7 @@ input#submit {
       }
 
       #contact_foot {
-          padding-top: 300px;
+          padding-top: 150px;
       }
 
       img#atdheadshot {
@@ -673,4 +684,32 @@ input#submit {
     .container4 .contactimg {
         text-align: center;
     }
+
+    @media screen and (prefers-reduced-motion: reduce){
+        .form1 {
+            animation: none;
+            display: none;
+        }
+
+        .flip-card {
+            animation: none;
+        }
+
+        #message2 {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box; 
+            border-radius: 25px;
+        }
+              
+        div.form2 {
+            font-family: 'Space Mono', 'serif';
+            display: flex;
+            padding-top: 80px;
+        }
+    }
+
 }
