@@ -355,6 +355,10 @@ input#submit {
         font-size: 3.5em;
     }
 
+    .container2 p {
+        text-align: center;
+    }
+
     .container3 {
         display: grid;
         grid-template-columns: 1fr;
@@ -374,7 +378,6 @@ input#submit {
         text-align: center;
         padding-top: 30px;
     }
-
     
     #si106 {
         grid-column: 2;
