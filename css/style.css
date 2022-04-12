@@ -154,11 +154,11 @@ h1#main.main1 {
         animation: none;
     }
 
-    #future {
+    img#future {
         animation: none;
     }
 
-    .form {
+    fieldset.form {
         animation: none;
     }
 
@@ -167,7 +167,7 @@ h1#main.main1 {
     }
 
     .parallax {
-        background-attachment: initial;
+        background-attachment: scroll;
     }
 }
 
@@ -199,6 +199,21 @@ h1#main.main1 {
 
 #future {
     animation: rotation 2s infinite linear;
+}
+
+#ttt_button {
+    background: linear-gradient(lightblue, white, lightblue);
+    position: absolute;
+}
+
+#linked_in {
+    width: 100px;
+    height: 80px;
+}
+
+#workout {
+    background: linear-gradient(lightblue, white, lightblue);
+    position: absolute;
 }
 
 @keyframes rotation {
@@ -249,6 +264,13 @@ h1#main.main1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.container4 p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 50px;
+    background-color: aliceblue;
 }
 
 

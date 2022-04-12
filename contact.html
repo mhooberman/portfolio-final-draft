@@ -34,6 +34,8 @@
 	</header>
 
     <main class="container4"> 
+        <p>You have reached my contact page! Please fill out the form below to reach me, or check out my LinkedIn!</p>
+        <button id="linked_in" onclick="LinkedIn">Click to view Marlee's personal LinkedIn page</button>
         <div class="contactimg">
             <div class="flip-card">
                 <a href="#" aria-label="Enables tab accessibility for flip card">
@@ -52,7 +54,7 @@
                                 <label for="email">Email:</label>
                                     <input type="email" placeholder="Enter your email" name = "email" id="email"><br/>
                                 <label for="phone">Phone Number:</label>
-                                    <input type="email" placeholder="123-456-7890" name = "phone" id="phone"><br/>    
+                                    <input type="phone" placeholder="123-456-7890" name = "phone" id="phone"><br/>    
                                 <label for="message"><br>Message:</br></label>
                                     <textarea placeholder="Enter your message" id = "message" name="message" required></textarea> </br>
                                 </br>
@@ -69,18 +71,19 @@
                 <form action="https://formspree.io/f/meqnzzpa" method = "POST">
                     <fieldset> 
                         <legend id="form_title2"> Fill out the form below to contact me directly:</legend>
-                        <label for="name">Name:</label>
-                            <input type="text" placeholder="Enter your name" name = "name" id="name"><br/>
-                        <label for="email">Email:</label>
-                            <input type="email" placeholder="Enter your email" name = "email" id="email"><br/>
-                        <label for="phone">Phone Number:</label>
-                            <input type="email" placeholder="123-456-7890" name = "phone" id="phone"><br/>    
-                        <label for="message"><br>Message:</br></label>
-                            <textarea placeholder="Enter your message" id = "message2" name="message" required></textarea> </br>
+                        <label for="name2">Name:</label>
+                            <input type="text" placeholder="Enter your name" name = "name2" id="name2"><br/>
+                        <label for="email2">Email:</label>
+                            <input type="email" placeholder="Enter your email" name = "email2" id="email2"><br/>
+                        <label for="phone2">Phone Number:</label>
+                            <input type="phone" placeholder="123-456-7890" name = "phone2" id="phone2"><br/>    
+                        <label for="message2"><br>Message:</br></label>
+                            <textarea placeholder="Enter your message" id = "message2" name="message2" required></textarea> </br>
                         </br>
-                        <input type = "submit" value = "Submit" id="submit">
+                        <input type = "submit" value = "Submit" id="submit2">
                     </fieldset>
                 </form> 
+            </div>
 <!-- 
 	<main class="container4">
         <div class="contactimg">
@@ -114,10 +117,12 @@
                 </fieldset>
             </form> 
         </div> -->
-        
     </main>
+
     <footer id = "contact_foot">
         <p>&copy; Marlee Hooberman 2022 <i class="fa-solid fa-heart" label="Solid black heart icon"></i></p>
 	</footer>
+<script src="js/contact.js"></script>
+
 </body>
 </html>
