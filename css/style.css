@@ -127,6 +127,7 @@ img.colorheadshot {
 .container1 p {
     grid-column: 1 / 4;
     width: 100%;
+    text-align: left;
 }
 
 .main1 {
@@ -161,38 +162,6 @@ h2#user {
 
 .form2 {
     display: none;
-}
-
-/* Prefers Reduced Motion */
-@media screen and (prefers-reduced-motion: reduce){
-    html {
-        scroll-behavior: auto;
-    }
-
-    .skip {
-        -webkit-transition: initial;
-        transition: initial;
-    }
-
-    .main1 {
-        animation: none;
-    }
-
-    img#future {
-        animation: none;
-    }
-
-    fieldset.form {
-        animation: none;
-    }
-
-    .flip-card {
-        animation: none;
-    }
-
-    div.parallax {
-        background-attachment: inherit;
-    }
 }
 
 
@@ -449,7 +418,7 @@ input#submit {
 
 /* TABLET */
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 680px){
     .skip:focus {
         left: 0px;
         top: 20px;
@@ -459,19 +428,25 @@ input#submit {
         text-align: center;
     }
 
-    nav li {
-        display: inline-block;
-        width: auto;
-        justify-items: center;
-        justify-content: space-between;
+    nav ul {
+        justify-content: center;
+        justify-items: space-between;
     }
 
-    nav ul {
-        display: inline-block;
+    nav li {
+        margin: 10px;
     }
+
+    /* nav ul {
+        display: inline-block;
+    } */
 
     h1#main.main1 {
         font-size: 3.5em;
+    }
+
+    .container1 p {
+        text-align: center;
     }
 
     .container2 p {
@@ -538,17 +513,12 @@ input#submit {
 
 @media screen and (min-width: 1024px){
     nav {
-        text-align: right;
-    }
-
-    nav li {
-        display: inline-block;
-        width: auto;
-        justify-items: right;
+        text-align: center;
     }
 
     nav ul {
-        display: inline-block;
+        justify-content: right;
+        justify-items: space-between;
     }
 
     p,
@@ -824,4 +794,40 @@ input#submit {
         }
     }
 
+}
+
+/* Prefers Reduced Motion */
+@media screen and (prefers-reduced-motion: reduce){
+    html {
+        scroll-behavior: auto;
+    }
+
+    .skip {
+        -webkit-transition: initial;
+        transition: initial;
+    }
+
+    .main1 {
+        animation: none;
+    }
+
+    img#future {
+        animation: none;
+    }
+
+    div.form {
+        display: none;
+        animation: none;
+    }
+
+    .flip-card:focus-within .flip-card-inner,
+      .flip-card:active .flip-card-inner,
+      .flip-card:focus .flip-card-inner,
+      .flip-card:hover .flip-card-inner {
+        transform: none;
+    }
+
+    div.parallax {
+        background-attachment: inherit;
+    }
 }
