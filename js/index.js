@@ -3,5 +3,5 @@ function indexPersonalize() {
     if (userName != null) {
         document.getElementById("user").innerHTML =
         "Nice to meet you, " + userName + "!";
-  }
+    }
 }
