@@ -190,8 +190,8 @@ h2#user {
         animation: none;
     }
 
-    .parallax {
-        background-attachment: scroll;
+    div.parallax {
+        background-attachment: inherit;
     }
 }
 

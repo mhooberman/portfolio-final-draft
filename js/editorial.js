@@ -13,11 +13,11 @@ document.querySelector("#article1").addEventListener("click", function() {
 document.querySelector("#article2").addEventListener("click", function() {
 	console.log("Clicked to view Marlee's article about smoothies");
     window.alert("You clicked a button to view Marlee's article about smoothies. If you wish to continue, press 'OK' and you will be taken to the article page.")
-    window.open("https://citylifestyle.com/detroit-mi/articles/food-and-beverage/local-ice-cream-your-kids-will-love");
+    window.open("https://citylifestyle.com/detroit-mi/articles/food-and-beverage/best-local-acai-bowls");
 });
 
 document.querySelector("#article3").addEventListener("click", function() {
     console.log("Clicked to view Marlee's article about ice cream");
     window.alert("You clicked a button to view Marlee's article about ice cream. If you wish to continue, press 'OK' and you will be taken to the article page.")
-    window.open("https://citylifestyle.com/detroit-mi/articles/food-and-beverage/best-local-acai-bowls");
+    window.open("    https://citylifestyle.com/detroit-mi/articles/food-and-beverage/local-ice-cream-your-kids-will-love");
 });
