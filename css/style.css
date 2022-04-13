@@ -86,6 +86,22 @@ h1{
 
 /* Home */
 
+#personalize {
+    display: inline-block;
+    position: relative;
+    left: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightskyblue;
+    width: 150px;
+    height: 50px;
+    border-radius: 5ch;
+    border-color: grey;
+}
+
+#personalize:active {
+    color: white;
+}
+
 .index {
     display: grid;
 }
@@ -133,6 +149,14 @@ h1#main.main1 {
     from {
         width: 0
     }
+}
+
+h2#user {
+    font-size: 2em;
+    text-align: left;
+    position: relative;
+    left: 35px;
+    font-weight: bold;
 }
 
 .form2 {
