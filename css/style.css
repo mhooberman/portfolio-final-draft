@@ -224,13 +224,21 @@ h2#user {
     left: 1100px;
 }
 
-p#p_editorial {
-    text-align: left;
-    font-size: small;
-    background-color: rgb(141, 137, 137);
-    padding: 10px;
-    width: 200px;
-    border-radius: 15px;
+.editorial {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#article1,
+#article2,
+#article3 {
+    height: 80px;
+    width: 150px;
+    background-color: rgb(65, 76, 238);
+    color: rgb(255, 255, 255);
 }
 
 h1#editorial_header {
@@ -249,31 +257,12 @@ h1#editorial_header {
     margin: 30px;
 }
 
-#article1 {
-    position: absolute;
-    left: 170px;
-    bottom: 75px;
-}
-
-#article2 {
-    position: absolute;
-    left: 650px;
-    bottom: 75px;
-}
-
-#article3 {
-    position: absolute;
-    left: 1110px;
-    bottom: 75px;
-}
-
-#article1,
-#article2,
-#article3 {
-    margin-top: 50px;
-    width: 150px;
-    background-color: rgb(65, 76, 238);
-    color: rgb(255, 255, 255);
+#p_editorial {
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 10px;
 }
 
 /* My Experiences */
